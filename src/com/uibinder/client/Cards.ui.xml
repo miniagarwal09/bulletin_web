@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+
+	</ui:style>
+	<m:MaterialColumn grid="l6 m6 s12">
+		<m:MaterialCard backgroundColor="WHITE" ui:field="card">
+			<m:MaterialCardImage waves="LIGHT">
+				<m:MaterialImage
+				    m:height="300"
+				    m:width="350"
+				    ui:field="image"
+					url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb" />
+			</m:MaterialCardImage>
+		<m:MaterialCardAction>
+		<m:MaterialCardTitle ui:field="title" textColor="RED_DARKEN_2"/>
+		<m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="BLUE" iconType="EDIT" float="RIGHT" ui:field="edit"/>
+			</m:MaterialCardAction>
+			<m:MaterialCardContent textColor="BLACK"
+				ui:field="cardContent">
+				<m:MaterialLabel ui:field="text"
+					text="Sample" />
+			</m:MaterialCardContent>
+			<m:MaterialCardAction>
+				<m:MaterialLink ui:field="link" target="_blank"
+					href="" text="FULL NEWS"
+					textColor="BLUE" />		
+			</m:MaterialCardAction>
+		</m:MaterialCard>
+	</m:MaterialColumn>
+</ui:UiBinder> 

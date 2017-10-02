@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+
+		}
+	</ui:style>
+	<m:MaterialPanel>
+		<m:MaterialHeader paddingLeft="0" width="100%"
+			textColor="WHITE">
+			<m:MaterialNavBar backgroundColor="BLUE" width="100%"
+				textColor="WHITE" ui:field="navBar">
+				<m:MaterialIcon iconType="MENU" iconColor="WHITE"
+					waves="DEFAULT" circle="true" activates="sidenav" float="LEFT" />
+
+				<m:MaterialNavBrand text="Bulletin" paddingLeft="20" />
+
+				<m:MaterialNavSection hideOn="NONE" float="RIGHT"
+					paddingLeft="100">
+					<m:MaterialLink ui:field="btnSearch" iconType="SEARCH"
+						iconColor="WHITE" float="RIGHT" />
+					<m:MaterialLink text="Logout" href="#signup"
+						ui:field="logout" textColor="WHITE" waves="DEFAULT" />
+				</m:MaterialNavSection>
+			</m:MaterialNavBar>
+			<m:MaterialNavBar ui:field="navBarSearch" width="100%"
+				visible="false">
+				<m:MaterialSearch ui:field="txtSearch" placeholder="Search Article"
+					backgroundColor="WHITE" iconColor="BLACK" active="true" grid="l3"
+					shadow="1" />
+			</m:MaterialNavBar>
+		</m:MaterialHeader>
+		<m:MaterialSideNavPush m:id="sidenav">
+			<m:MaterialLink text="Add News Article" iconType="POLYMER"
+				ui:field="addArticle" href="#add_article" textColor="BLACK" waves="DEFAULT" />
+			<m:MaterialLink text="Fetch News Article" iconType="POLYMER"
+				ui:field="fetchArticle" href="#fetch_article" textColor="BLACK"
+				waves="DEFAULT" />
+			<m:MaterialLink text="Manage Articles" iconType="POLYMER"
+				textColor="BLACK" waves="DEFAULT" ui:field="manage" />
+			<m:MaterialLink text="Edit Profile" iconType="POLYMER"
+				textColor="BLACK" waves="DEFAULT" />
+		</m:MaterialSideNavPush>
+		<m:MaterialContainer>
+			<m:MaterialPanel>
+				<m:MaterialRow>
+					<m:MaterialColumn grid="s12 m10 l10" ui:field="display"
+						offset="l1 m1">
+						<m:MaterialRow ui:field="rowCards" />
+
+					</m:MaterialColumn>
+					<m:MaterialColumn grid="s12 m10 l10" ui:field="add"
+						offset="l1 m1" />
+
+					<m:MaterialColumn grid="s12 m10 l10" ui:field="fetch"
+						offset="l1 m1" />
+
+
+				</m:MaterialRow>
+			</m:MaterialPanel>
+		</m:MaterialContainer>
+
+	</m:MaterialPanel>
+
+</ui:UiBinder> 

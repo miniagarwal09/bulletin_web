@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:ma="urn:import:gwt.material.design.addins.client" xmlns:combobox="urn:import:gwt.material.design.addins.client.combobox">
+	<ui:style>
+		.important {
+		font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s12 m6 l6">
+				<m:MaterialPanel width="100%" paddingTop="60">
+					<m:MaterialTextBox label="Title" iconType="TITLE"
+						ui:field="title" />
+					<m:MaterialRow>
+						<m:MaterialColumn grid="s10 m10 l10">
+							<combobox:MaterialComboBox ui:field="category"
+								label="Enter the category of news">
+								<m:html.Option value="1" text="Select Category" />
+							</combobox:MaterialComboBox>
+							<m:MaterialTextBox label="Enter New Category"
+								iconType="ADD" ui:field="newCategory" />
+						</m:MaterialColumn>
+						<m:MaterialColumn grid="s2 m2 l2">
+							<m:MaterialButton text="" ui:field="addCategory"
+								type="FLOATING" waves="LIGHT" backgroundColor="BLUE" iconType="ADD"
+								marginTop="10" />
+
+						</m:MaterialColumn>
+					</m:MaterialRow>
+					<m:MaterialTextBox label="Enter the link of news"
+						iconType="LINK" ui:field="link" />
+					<m:MaterialTextArea label="Enter the Text of news"
+						iconType="TEXT_FIELDS" ui:field="text" />
+					<m:MaterialTextBox label="Enter the tag Of news"
+						iconType="TAG_FACES" ui:field="tags" />
+				</m:MaterialPanel>
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s12 m6 l6">
+				<m:MaterialPanel width="100%" paddingTop="60"
+					paddingBottom="60">
+					<ma:fileuploader.MaterialFileUploader
+						ui:field="uploader" url="/article_image_upload" maxFileSize="2"
+						shadow="1" width="100" height="100">
+						<ma:fileuploader.MaterialUploadLabel
+							title="Drag Files to Upload" description="Article Image Upload" />
+					</ma:fileuploader.MaterialFileUploader>
+					<m:MaterialCardImage waves="LIGHT" margin="60"
+						ui:field="uploadedImage">
+						<m:MaterialImage ui:field="image"
+							url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png" />
+						<m:MaterialCardTitle ui:field="imageName" />
+						<m:MaterialButton ui:field="changeImage" type="FLOATING"
+							waves="LIGHT" backgroundColor="BLUE" iconType="EDIT" margin="10"
+							float="RIGHT" />
+					</m:MaterialCardImage>
+
+				</m:MaterialPanel>
+
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s12 m6 l6" />
+
+
+			<m:MaterialColumn grid="s12 m12 l12">
+				<m:MaterialButton text="Add Article" width="70%"
+					ui:field="button" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

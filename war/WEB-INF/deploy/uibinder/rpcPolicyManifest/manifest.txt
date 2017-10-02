@@ -1,0 +1,3 @@
+# Module uibinder
+# RPC service class, partial path of RPC policy file
+com.uibinder.client.GreetingService, 23DAB3CDC179C0F76F2F8DDB47104E0C.gwt.rpc

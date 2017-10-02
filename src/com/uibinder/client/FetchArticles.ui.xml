@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:combobox="urn:import:gwt.material.design.addins.client.combobox">
+	<ui:style>
+	</ui:style>
+	<g:HTMLPanel>
+	<m:MaterialPanel width="100%" paddingTop="60">	    
+		
+		<combobox:MaterialComboBox ui:field="category_to_fetch"
+								label="Enter the category of news">
+								<m:html.Option value="1" text="Select Category" />
+							</combobox:MaterialComboBox>
+		<m:MaterialButton text="Fetch Articles in a Category" backgroundColor="BLUE" ui:field="fetch_article_in_category" textColor="WHITE"/>
+		<m:MaterialButton text="Fetch All Articles" backgroundColor="BLUE" ui:field="fetch" textColor="WHITE"/>
+		<m:MaterialTitle ui:field="category" textColor="RED"/>
+	</m:MaterialPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

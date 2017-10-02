@@ -1,0 +1,2 @@
+serviceClass: com.uibinder.client.GreetingService
+path: 23DAB3CDC179C0F76F2F8DDB47104E0C.gwt.rpc

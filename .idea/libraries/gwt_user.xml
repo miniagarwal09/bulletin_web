@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="gwt-user">
+    <CLASSES>
+      <root url="jar://F:/Downloads/Compressed/gwt-2.8.1/gwt-2.8.1/gwt-user.jar!/" />
+      <root url="jar://F:/Downloads/gwt-material-2.0-rc5.jar!/" />
+      <root url="jar://F:/Downloads/gwt-material-addins-2.0-rc5.jar!/" />
+      <root url="jar://F:/Downloads/gwt-material-table-2.0-rc5.jar!/" />
+      <root url="jar://F:/Downloads/gwt-material-themes-2.0-rc5.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/gwt-material-jquery-1.0-rc4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://F:/Downloads/Compressed/gwt-2.8.1/gwt-2.8.1/gwt-user.jar!/" />
+      <root url="jar://F:/Downloads/gwt-material-jquery-2.0-rc5.jar!/" />
+      <root url="jar://F:/Downloads/gwt-material-2.0-rc5.jar!/" />
+      <root url="jar://F:/Downloads/gwt-material-addins-2.0-rc5.jar!/" />
+      <root url="jar://F:/Downloads/gwt-material-table-2.0-rc5.jar!/" />
+      <root url="jar://F:/Downloads/gwt-material-themes-2.0-rc5.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/gwt-material-jquery-1.0-rc1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/gwt-material-jquery-1.0-rc4.jar!/" />
+    </SOURCES>
+  </library>
+</component>

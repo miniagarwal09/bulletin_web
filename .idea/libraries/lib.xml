@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../lib" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../lib/commons-lang3-3.6/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../lib/commons-lang3-3.6-src/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../lib/commons-lang3-3.6-src/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../lib" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../lib" recursive="false" type="SOURCES" />
+  </library>
+</component>
